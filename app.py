@@ -155,7 +155,8 @@ def delete_task(task_id):
     conn.commit()
     conn.close()
     
-    return jsonify({'message': 'Task deleted'})
+    # Assignment requirement: return 204 with an empty body
+    return '', 204
 
 # ==================
 # START SERVER
